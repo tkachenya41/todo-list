@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root" class="todo__list">
+      <form class="header">
+        <input
+          type="submit"
+          class="header-btn"
+          data-action="delete-all"
+          value="Delete all"
+        />
+        <input
+          type="text"
+          class="tasksInput"
+          id="taskInput"
+          data-action="addByEnter"
+          placeholder="Enter todo ..."
+        />
+        <button class="header-btn" data-action="add">Add</button>
+      </form>
+      <ul class="tasksList">
+        <!-- <li class="task">
+          <div class="left_task">
+            <button class="completeTask" data-action="complete">
+              <img src="tick.png" alt="tick" />
+            </button>
+            <div class="taskText">Learn Js</div>
+          </div>
+          <div class="right_task">
+            <button class="deleteTask" data-action="delete">
+              <img src="cross.png" alt="cross" />
+            </button>
+            <input type="date" value="Date" />
+          </div>
+        </li> -->
+      </ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
